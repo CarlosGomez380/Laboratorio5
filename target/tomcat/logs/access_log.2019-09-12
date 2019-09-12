@@ -1,0 +1,10 @@
+127.0.0.1 - - [12/Sep/2019:09:33:03 -0500] "GET /edu/eci/cvds/servlet HTTP/1.1" 404 991 http-bio-8080-exec-1 23
+127.0.0.1 - - [12/Sep/2019:09:33:03 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 1
+127.0.0.1 - - [12/Sep/2019:09:36:28 -0500] "GET /edu/eci/cvds/servlet HTTP/1.1" 404 991 http-bio-8080-exec-1 20
+127.0.0.1 - - [12/Sep/2019:09:38:12 -0500] "GET /edu/eci/cvds/servlet/helloServlet HTTP/1.1" 404 1017 http-bio-8080-exec-3 1
+127.0.0.1 - - [12/Sep/2019:09:38:19 -0500] "GET /helloServlet HTTP/1.1" 200 16 http-bio-8080-exec-4 2
+127.0.0.1 - - [12/Sep/2019:09:38:22 -0500] "GET /helloServlet HTTP/1.1" 200 16 http-bio-8080-exec-6 1
+127.0.0.1 - - [12/Sep/2019:09:38:22 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-7 0
+127.0.0.1 - - [12/Sep/2019:09:40:08 -0500] "GET /helloServlet?name=sebastian HTTP/1.1" 200 25 http-bio-8080-exec-1 20
+127.0.0.1 - - [12/Sep/2019:09:40:21 -0500] "GET /helloServlet?%name=sebastian HTTP/1.1" 200 16 http-bio-8080-exec-2 2
+127.0.0.1 - - [12/Sep/2019:09:40:34 -0500] "GET /helloServlet?name=%20sebastian HTTP/1.1" 200 27 http-bio-8080-exec-3 1
