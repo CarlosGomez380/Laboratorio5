@@ -3,10 +3,10 @@ package edu.eci.cvds.servlet.model;
 public class Todo{
 	private int userId;
 	private int id;
-	private String tittle;
-	private bool completed;
+	private String title;
+	private boolean completed;
 
-	public Todo{
+	public Todo(){
 		super();
 	}
 
@@ -25,7 +25,20 @@ public class Todo{
 	public void setId(int id){
 		this.id = id;	
 	}
-
-
-
+	
+	public String getTitle(){
+		return title;
+	}
+	
+	public void setTitle(String tittle){
+		this.title = title;
+	}
+	
+	public boolean getCompleted(){
+		return completed;
+	}
+	
+	public void setCompleted(boolean completed){
+		this.completed = completed;
+	}
 }
