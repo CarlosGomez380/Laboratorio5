@@ -17,6 +17,10 @@
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
+<<<<<<< HEAD
+=======
+			<attribute name="test" value="true"/>
+>>>>>>> f6ac396984ce0345f4c1542b61633f08d1de6cc3
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">

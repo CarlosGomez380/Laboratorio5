@@ -1,0 +1,72 @@
+package edu.eci.cvds.bean;
+
+import java.util.Random;
+import javax.faces.bean.*;	
+
+@ManagedBean(name = "guessBean")
+@ApplicationScoped
+
+public class Bean{
+	private int numero;
+	private int intentos;
+	private int acumulado;
+	private String estado;
+	
+	public Bean{
+		restart();
+	}
+	
+	public void guess(int adivinanza){
+		intentos++;
+		if(adivinanza==numero){
+			estado = "gano"
+			if(intentos==1){
+				acumulado += 100000;
+		}else{
+			estado = "fallo";
+			acumulado -= 10000;
+		}
+	}
+	
+	public void restart(){
+		Random rand = new Random();
+        numero = rand.nextInt(50);
+        intentos = 0;
+        acumulado = 0;
+        estado = "";
+	}
+	
+	public int getNumero(){
+		return numero;
+	}
+	
+	public void setNumero(int numero){
+		this.numero = numero;
+	}
+	
+	public int getIntentos(){
+		return intentos;
+	}
+	
+	public void setIntentos(int intentos){
+		this.intentos = intentos
+	}
+	
+	public int getAcumulado(){
+		return acumulado;
+	}
+	
+	public void setAcumulado(int acumulado){
+		this.acumulado = acumulado;
+	}
+	
+	public String getEstado(){
+		return estado;
+	}
+	
+	public void setEstado(int estado){
+		this.estado = estado;
+	}
+	
+	
+}

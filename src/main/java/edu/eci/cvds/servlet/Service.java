@@ -21,6 +21,7 @@ public class Service {
        Gson gson = new Gson();
        Todo todo = gson.fromJson(in, Todo.class);
        in.close();
+       
        return todo;
    }
 
